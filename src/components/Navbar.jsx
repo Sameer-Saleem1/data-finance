@@ -11,14 +11,14 @@ function Navbar() {
   return (
     <div className="text-white flex justify-between h-24 max-w-[900px] mx-auto px-4 items-center">
       <h1 className="w-full font-bold text-3xl text-[#00df9a]">React.</h1>
-      <ul className="hidden sm:flex">
+      <ul className="hidden md:flex">
         <li className="p-4">Home</li>
         <li className="p-4">Company</li>
         <li className="p-4">Resources</li>
         <li className="p-4">About</li>
         <li className="p-4">Contact</li>
       </ul>
-      <div onClick={handleNav} className="block sm:hidden">
+      <div onClick={handleNav} className="block md:hidden">
         {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
