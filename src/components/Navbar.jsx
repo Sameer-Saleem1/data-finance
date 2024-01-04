@@ -18,14 +18,14 @@ function Navbar() {
         <li className="p-4">About</li>
         <li className="p-4">Contact</li>
       </ul>
-      <div onClick={handleNav} className=" block md:hidden">
+      <div onClick={handleNav} className=" block  md:hidden ">
         {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
 
         <div
           className={
             !nav
-              ? "fixed left-0 top-0 w-[60%] border-r border-r-gray-900 h-full bg-[#000300]"
-              : " fixed left-[-100%] ease-in-out duration-500 "
+              ? "fixed left-0 top-0 w-[60%] border-r ease-in-out duration-500 border-r-gray-900 h-full bg-[#000300]"
+              : " fixed left-[-100%] top-0 w-[60%] border-r border-r-gray-900 h-full ease-in-out duration-500 "
           }
         >
           <h1 className="w-full font-bold text-3xl text-[#00df9a] m-4">
